@@ -1,5 +1,17 @@
 window.addEventListener("load", () => {
-  todos = JSON.parse(localStorage.getItem("todos")) || [];
+  function saveTodoList() {
+    localStorage.setItem("todos", JSON.stringify(todos));
+  }
+
+  function loadTodoList() {
+    var savedTodoList = localStorage.getItem("todos");
+    if (savedTodoList) {
+      todos = JSON.parse(savedTodoList) || [];
+    }
+  }
+  window.addEventListener("beforeunload", saveTodoList);
+  loadTodoList();
+
   const newTodoForm = document.getElementById("new-todo-form");
 
   newTodoForm.addEventListener("submit", (e) => {
@@ -12,8 +24,6 @@ window.addEventListener("load", () => {
     };
 
     todos.push(todo);
-
-    localStorage.setItem("todos", JSON.stringify(todos));
 
     e.target.reset();
 
@@ -96,4 +106,14 @@ function DisplayTodos() {
       DisplayTodos();
     });
   });
+
+  window.onbeforeunload = function () {
+    return "Are you sure you want to refresh the page?";
+  };
+
+  window.onkeydown = function (e) {
+    if (e.key === "F5") {
+      e.preventDefault();
+    }
+  };
 }
