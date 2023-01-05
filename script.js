@@ -1,28 +1,6 @@
 window.addEventListener("load", () => {
-<<<<<<< Updated upstream
-=======
-<<<<<<< HEAD
   todos = JSON.parse(localStorage.getItem("todos")) || [];
-=======
->>>>>>> Stashed changes
-  function saveTodoList() {
-    localStorage.setItem("todos", JSON.stringify(todos));
-  }
-
-  function loadTodoList() {
-    var savedTodoList = localStorage.getItem("todos");
-    if (savedTodoList) {
-      todos = JSON.parse(savedTodoList) || [];
-    }
-  }
-  window.addEventListener("beforeunload", saveTodoList);
-  loadTodoList();
-<<<<<<< Updated upstream
-=======
->>>>>>> 80506b9e76b7b525412a507203f3e3c6424fb587
->>>>>>> Stashed changes
-
-  const newTodoForm = document.getElementById("new-todo-form");
+  const newTodoForm = document.querySelector("#new-todo-form");
 
   newTodoForm.addEventListener("submit", (e) => {
     e.preventDefault();
@@ -32,21 +10,25 @@ window.addEventListener("load", () => {
       done: false,
       createdAt: new Date().getTime(),
     };
+
     todos.push(todo);
+    localStorage.setItem("todos", JSON.stringify(todos));
 
     e.target.reset();
 
     DisplayTodos();
   });
+  DisplayTodos();
 });
 
 function DisplayTodos() {
-  const todoList = document.getElementById("todo-list");
+  const todoList = document.querySelector("#todo-list");
 
   todoList.innerHTML = "";
 
   todos.forEach((todo) => {
     const todoItem = document.createElement("div");
+
     todoItem.classList.add("todo-item");
 
     const label = document.createElement("label");
@@ -116,13 +98,13 @@ function DisplayTodos() {
     });
   });
 
-  window.onbeforeunload = function () {
-    return "Are you sure you want to refresh the page?";
-  };
+  // window.onbeforeunload = function () {
+  //   return "Are you sure you want to refresh the page?";
+  // };
 
-  window.onkeydown = function (e) {
-    if (e.key === "F5") {
-      e.preventDefault();
-    }
-  };
+  // window.onkeydown = function (e) {
+  //   if (e.key === "F5") {
+  //     e.preventDefault();
+  //   }
+  // };
 }
