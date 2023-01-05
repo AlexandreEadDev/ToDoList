@@ -1,4 +1,10 @@
 window.addEventListener("load", () => {
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+  todos = JSON.parse(localStorage.getItem("todos")) || [];
+=======
+>>>>>>> Stashed changes
   function saveTodoList() {
     localStorage.setItem("todos", JSON.stringify(todos));
   }
@@ -11,6 +17,10 @@ window.addEventListener("load", () => {
   }
   window.addEventListener("beforeunload", saveTodoList);
   loadTodoList();
+<<<<<<< Updated upstream
+=======
+>>>>>>> 80506b9e76b7b525412a507203f3e3c6424fb587
+>>>>>>> Stashed changes
 
   const newTodoForm = document.getElementById("new-todo-form");
 
@@ -22,7 +32,6 @@ window.addEventListener("load", () => {
       done: false,
       createdAt: new Date().getTime(),
     };
-
     todos.push(todo);
 
     e.target.reset();
