@@ -17,13 +17,18 @@ index.html: The main HTML file that defines the structure of the ToDo List appli
 script.js: The JavaScript file containing the logic for handling task creation, editing, and deletion.
 style.css: The CSS file that styles the appearance of the ToDo List application.
 
-## Usage
-Open the index.html file in a web browser.
-Enter the task content in the input field under the "CREATE A TODO" section.
-Click the "Add todo" button to create a new task.
-To mark a task as completed, check the checkbox next to the task.
-To edit a task, click the "Edit" button, modify the task content, and press Enter or click outside the input field.
-To delete a task, click the "Delete" button.
+Usage
+1. Open the project in Visual Studio Code.
+
+2. Open the settings.json file in the .vscode directory.
+
+3. Modify the liveServer.settings.port property to set the desired port number for Live Server. For example, change it to: "liveServer.settings.port": 5501
+
+4. Save the settings.json file.
+
+5. Start Live Server by clicking on the "Go Live" button at the bottom right corner of Visual Studio Code, or by using the keyboard shortcut Ctrl+Alt+L.
+
+6. Your website will open in your default web browser with the Live Server running on the specified port.
 
 
 License
