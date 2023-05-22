@@ -5,10 +5,10 @@ A simple ToDo List web application.
 This project is a basic ToDo List web application that allows users to create, edit, and delete tasks. The application provides a user-friendly interface for managing daily tasks efficiently.
 
 ## Features
-. Create new tasks by entering the task content in the input field and clicking the "Add todo" button.
-. Mark tasks as completed by checking the checkbox next to each task.
-. Edit task content by clicking the "Edit" button, modifying the task content, and pressing Enter or clicking outside the input field.
-. Delete tasks by clicking the "Delete" button.
+- Create new tasks by entering the task content in the input field and clicking the "Add todo" button.
+- Mark tasks as completed by checking the checkbox next to each task.
+- Edit task content by clicking the "Edit" button, modifying the task content, and pressing Enter or clicking outside the input field.
+- Delete tasks by clicking the "Delete" button.
 
 ## File Structure
 The project consists of the following files:
