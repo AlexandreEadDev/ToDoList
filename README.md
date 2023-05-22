@@ -5,17 +5,19 @@ A simple ToDo List web application.
 This project is a basic ToDo List web application that allows users to create, edit, and delete tasks. The application provides a user-friendly interface for managing daily tasks efficiently.
 
 ## Features
-Create new tasks by entering the task content in the input field and clicking the "Add todo" button.
-Mark tasks as completed by checking the checkbox next to each task.
-Edit task content by clicking the "Edit" button, modifying the task content, and pressing Enter or clicking outside the input field.
-Delete tasks by clicking the "Delete" button.
+. Create new tasks by entering the task content in the input field and clicking the "Add todo" button.
+. Mark tasks as completed by checking the checkbox next to each task.
+. Edit task content by clicking the "Edit" button, modifying the task content, and pressing Enter or clicking outside the input field.
+. Delete tasks by clicking the "Delete" button.
 
 ## File Structure
 The project consists of the following files:
 
-index.html: The main HTML file that defines the structure of the ToDo List application.
-script.js: The JavaScript file containing the logic for handling task creation, editing, and deletion.
-style.css: The CSS file that styles the appearance of the ToDo List application.
+1. index.html: The main HTML file that defines the structure of the ToDo List application.
+
+2. script.js: The JavaScript file containing the logic for handling task creation, editing, and deletion.
+
+3. style.css: The CSS file that styles the appearance of the ToDo List application.
 
 ## Usage
 1. Open the project in Visual Studio Code.
