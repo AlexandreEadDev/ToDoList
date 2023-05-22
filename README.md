@@ -17,7 +17,7 @@ index.html: The main HTML file that defines the structure of the ToDo List appli
 script.js: The JavaScript file containing the logic for handling task creation, editing, and deletion.
 style.css: The CSS file that styles the appearance of the ToDo List application.
 
-Usage
+## Usage
 1. Open the project in Visual Studio Code.
 
 2. Open the settings.json file in the .vscode directory.
